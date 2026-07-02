@@ -9,10 +9,13 @@ desktop.ini
 *.swp
 *.swo
 
-# Node (if ever added)
+# Node (build tools only — not deployed)
 node_modules/
 npm-debug.log*
 yarn-error.log
+package.json
+package-lock.json
+optimize-images.js
 
 # Build output
 dist/
@@ -28,4 +31,7 @@ build/
 
 # Docs only
 assets/images/README-assets.txt
+
+# Source images (original large files)
+assets/images/logo-real.png
 .vercel

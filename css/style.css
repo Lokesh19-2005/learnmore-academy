@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); font-weight: 700; lin
   height: 72px;
 }
 .nav-logo { display: flex; align-items: center; gap: 10px; }
-.nav-logo img { height: 42px; width: auto; }
+.nav-logo img { height: 42px; width: auto; object-fit: contain; }
 .nav-logo-text { font-family: var(--font-heading); font-weight: 800; font-size: 1.25rem; }
 .nav-logo-text span { color: var(--secondary); }
 .nav-links {
