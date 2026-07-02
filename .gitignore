@@ -16,6 +16,7 @@ yarn-error.log
 package.json
 package-lock.json
 optimize-images.js
+gen-qr.js
 
 # Build output
 dist/
