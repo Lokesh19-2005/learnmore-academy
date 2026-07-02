@@ -178,12 +178,12 @@
       position: relative; z-index: 1;
     }
     .logo-img {
-      width: 56px; height: 56px;
-      border-radius: 14px;
+      width: 72px; height: 72px;
+      border-radius: 16px;
       border: 2px solid rgba(255,255,255,0.15);
       padding: 4px;
       background: rgba(255,255,255,0.06);
-      object-fit: cover;
+      object-fit: contain;
     }
     .logo-text-block { text-align: left; }
     .logo-name {
@@ -461,8 +461,10 @@
       <div class="logo-area">
         <img
           src="assets/images/logo.png"
+          srcset="assets/images/logo@2x.png 2x"
           alt="LearnMore Academy Official Logo"
           class="logo-img"
+          width="72" height="72"
           onerror="this.style.display='none';document.getElementById('logo-fallback').style.display='flex';"
         />
         <!-- SVG fallback if PNG not present -->
