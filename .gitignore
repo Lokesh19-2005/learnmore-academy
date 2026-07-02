@@ -28,3 +28,4 @@ build/
 
 # Docs only
 assets/images/README-assets.txt
+.vercel
