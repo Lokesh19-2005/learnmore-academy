@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404 — Page Not Found | LearnMore Academy</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Navigate back to LearnMore Academy."/>
+  <meta name="robots" content="noindex"/>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{primary:'#14532D',secondary:'#16A34A',accent:'#FFD54A'}}}}</script>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .error-particles { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+    .particle {
+      position: absolute; width: 4px; height: 4px; border-radius: 50%;
+      background: rgba(22,163,74,0.4); animation: particleFloat linear infinite;
+    }
+    @keyframes particleFloat {
+      0% { transform: translateY(100vh) translateX(0) rotate(0deg); opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { transform: translateY(-100px) translateX(100px) rotate(360deg); opacity: 0; }
+    }
+    .auto-redirect-bar { width: 200px; height: 3px; background: rgba(255,255,255,0.1); border-radius: 99px; overflow: hidden; margin: 16px auto 0; }
+    .auto-redirect-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--secondary)); border-radius: 99px; width: 0%; animation: autoRedirect 10s linear forwards; }
+    @keyframes autoRedirect { to { width: 100%; } }
+  </style>
+</head>
+<body>
+<div class="error-page" role="main" aria-label="404 error page">
+  <div class="error-particles" aria-hidden="true" id="particles"></div>
+  <div style="position:relative;z-index:1;max-width:600px;width:100%;">
+    <!-- Logo -->
+    <a href="index.html" style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:48px;text-decoration:none;" aria-label="LearnMore Academy Home">
+      <img src="assets/images/logo.svg" alt="LearnMore Academy" width="48" height="48"/>
+      <span style="font-family:'Poppins',sans-serif;font-weight:800;font-size:1.2rem;color:white;">LearnMore <span style="color:var(--accent);">Academy</span></span>
+    </a>
+    <!-- 404 Number -->
+    <div class="error-number" aria-hidden="true">404</div>
+    <!-- Shield Icon -->
+    <div style="width:80px;height:80px;border-radius:50%;background:rgba(255,213,74,0.12);border:1px solid rgba(255,213,74,0.3);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:2rem;color:var(--accent);" aria-hidden="true">
+      <i class="fa-solid fa-shield-exclamation"></i>
+    </div>
+    <h1 class="error-title">Page Not Found</h1>
+    <p class="error-desc">The page you're looking for seems to have gone offline. Let's get you back on track.</p>
+    <!-- Actions -->
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:24px;">
+      <a href="index.html" class="btn btn-accent btn-lg"><i class="fa-solid fa-house" aria-hidden="true"></i> Back to Home</a>
+      <a href="courses.html" class="btn btn-outline-white btn-lg"><i class="fa-solid fa-book-open" aria-hidden="true"></i> View Courses</a>
+    </div>
+    <!-- Quick links -->
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:24px;">
+      <a href="cybersecurity.html" style="color:rgba(255,255,255,0.5);font-size:0.875rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Cybersecurity</a>
+      <a href="about.html" style="color:rgba(255,255,255,0.5);font-size:0.875rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">About Us</a>
+      <a href="contact.html" style="color:rgba(255,255,255,0.5);font-size:0.875rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Contact</a>
+    </div>
+    <!-- Auto redirect -->
+    <p style="font-size:0.8rem;color:rgba(255,255,255,0.35);" id="redirect-text">Redirecting to home page in <span id="countdown">10</span> seconds...</p>
+    <div class="auto-redirect-bar"><div class="auto-redirect-fill"></div></div>
+  </div>
+</div>
+
+<script>
+  // Generate floating particles
+  const container = document.getElementById('particles');
+  for (let i = 0; i < 20; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.left = Math.random() * 100 + '%';
+    p.style.width = p.style.height = (2 + Math.random() * 4) + 'px';
+    p.style.animationDuration = (5 + Math.random() * 10) + 's';
+    p.style.animationDelay = (Math.random() * 8) + 's';
+    container.appendChild(p);
+  }
+  // Countdown
+  let c = 10;
+  const countdown = document.getElementById('countdown');
+  const timer = setInterval(() => {
+    c--;
+    if (countdown) countdown.textContent = c;
+    if (c <= 0) { clearInterval(timer); window.location.href = 'index.html'; }
+  }, 1000);
+</script>
+</body>
+</html>

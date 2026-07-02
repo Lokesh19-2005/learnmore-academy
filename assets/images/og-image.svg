@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#0A2E1A"/>
+  <!-- bg hex grid -->
+  <defs>
+    <pattern id="hex" x="0" y="0" width="60" height="104" patternUnits="userSpaceOnUse">
+      <polygon points="30,2 58,17 58,47 30,62 2,47 2,17" fill="none" stroke="rgba(22,163,74,0.08)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#hex)"/>
+  <!-- gradient overlay -->
+  <radialGradient id="g1" cx="30%" cy="40%" r="60%">
+    <stop offset="0%" stop-color="#16A34A" stop-opacity="0.18"/>
+    <stop offset="100%" stop-color="#0A2E1A" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <!-- Shield icon -->
+  <path d="M200 160 L280 190 L280 270 C280 320 240 345 200 360 C160 345 120 320 120 270 L120 190 Z" fill="#16A34A" opacity="0.15"/>
+  <path d="M200 175 L265 200 L265 268 C265 310 233 332 200 345 C167 332 135 310 135 268 L135 200 Z" fill="#16A34A" opacity="0.2"/>
+  <path d="M175 267 L190 282 L228 245" stroke="#FFD54A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Text -->
+  <text x="330" y="220" font-family="'Poppins',sans-serif" font-weight="900" font-size="52" fill="white">LearnMore Academy</text>
+  <text x="330" y="285" font-family="'Poppins',sans-serif" font-weight="700" font-size="36" fill="#FFD54A">Cybersecurity &amp; Ethical Hacking</text>
+  <text x="330" y="340" font-family="'Inter',sans-serif" font-weight="400" font-size="24" fill="rgba(255,255,255,0.65)">Job-oriented IT training · Whitefield, Bangalore</text>
+  <!-- Divider -->
+  <rect x="330" y="368" width="120" height="3" rx="2" fill="#16A34A"/>
+  <!-- Tagline -->
+  <text x="330" y="420" font-family="'Poppins',sans-serif" font-weight="600" font-size="22" fill="rgba(255,255,255,0.5)">Learn. Build. Get Hired.</text>
+  <!-- Stats -->
+  <rect x="330" y="460" width="160" height="70" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="410" y="492" text-anchor="middle" font-family="'Poppins',sans-serif" font-weight="800" font-size="24" fill="#FFD54A">500+</text>
+  <text x="410" y="516" text-anchor="middle" font-family="'Inter',sans-serif" font-size="13" fill="rgba(255,255,255,0.5)">Students Trained</text>
+  <rect x="510" y="460" width="160" height="70" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="590" y="492" text-anchor="middle" font-family="'Poppins',sans-serif" font-weight="800" font-size="24" fill="#FFD54A">95%</text>
+  <text x="590" y="516" text-anchor="middle" font-family="'Inter',sans-serif" font-size="13" fill="rgba(255,255,255,0.5)">Placement Rate</text>
+  <rect x="690" y="460" width="160" height="70" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="770" y="492" text-anchor="middle" font-family="'Poppins',sans-serif" font-weight="800" font-size="24" fill="#FFD54A">6+</text>
+  <text x="770" y="516" text-anchor="middle" font-family="'Inter',sans-serif" font-size="13" fill="rgba(255,255,255,0.5)">IT Domains</text>
+</svg>

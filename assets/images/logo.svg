@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Shield background -->
+  <path d="M100 10 L170 40 L170 110 C170 150 135 178 100 190 C65 178 30 150 30 110 L30 40 Z" fill="#14532D"/>
+  <path d="M100 22 L158 48 L158 110 C158 144 127 169 100 180 C73 169 42 144 42 110 L42 48 Z" fill="#16A34A"/>
+  <!-- Book icon -->
+  <rect x="65" y="72" width="30" height="42" rx="3" fill="white" opacity="0.9"/>
+  <rect x="70" y="78" width="20" height="2" rx="1" fill="#14532D"/>
+  <rect x="70" y="84" width="20" height="2" rx="1" fill="#14532D"/>
+  <rect x="70" y="90" width="14" height="2" rx="1" fill="#14532D"/>
+  <rect x="95" y="72" width="2" height="42" rx="1" fill="white" opacity="0.5"/>
+  <rect x="97" y="72" width="30" height="42" rx="3" fill="white" opacity="0.75"/>
+  <rect x="102" y="78" width="20" height="2" rx="1" fill="#14532D"/>
+  <rect x="102" y="84" width="20" height="2" rx="1" fill="#14532D"/>
+  <rect x="102" y="90" width="14" height="2" rx="1" fill="#14532D"/>
+  <!-- Star accent -->
+  <circle cx="140" cy="52" r="10" fill="#FFD54A" opacity="0.9"/>
+  <path d="M140 45 L141.5 49.5 L146 49.5 L142.5 52.5 L144 57 L140 54.2 L136 57 L137.5 52.5 L134 49.5 L138.5 49.5 Z" fill="#14532D"/>
+</svg>

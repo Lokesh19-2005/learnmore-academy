@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Course QR Card — LearnMore Academy</title>
+  <meta name="description" content="Scan to explore the Cybersecurity Course by LearnMore Academy. Beginner friendly, job-oriented training in Bangalore."/>
+  <meta name="robots" content="noindex, follow"/>
+  <link rel="canonical" href="https://learnmoreacademy.in/qr-card.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Cybersecurity Course QR Card — LearnMore Academy"/>
+  <meta property="og:description" content="Scan to explore the Cybersecurity &amp; Ethical Hacking Course by LearnMore Academy."/>
+  <meta property="og:image" content="assets/images/og-image.svg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <style>
+    /* ============================================
+       RESET & BASE
+       ============================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0a1a0f;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      overflow-x: hidden;
+    }
+
+    /* ============================================
+       ANIMATED BACKGROUND
+       ============================================ */
+    .bg-scene {
+      position: fixed; inset: 0; z-index: 0;
+      overflow: hidden; pointer-events: none;
+    }
+    .bg-gradient {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 20% 20%, rgba(22,163,74,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 80% at 80% 80%, rgba(20,83,45,0.25) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 50% 50%, rgba(255,213,74,0.04) 0%, transparent 70%),
+        linear-gradient(135deg, #050e08 0%, #0a1a0f 40%, #0d2015 100%);
+    }
+    /* Hexagonal grid pattern */
+    .bg-hex {
+      position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='104'%3E%3Cpolygon points='30,2 58,17 58,47 30,62 2,47 2,17' fill='none' stroke='rgba(22,163,74,0.07)' stroke-width='1'/%3E%3Cpolygon points='30,52 58,67 58,97 30,112 2,97 2,67' fill='none' stroke='rgba(22,163,74,0.07)' stroke-width='1'/%3E%3C/svg%3E");
+      background-size: 60px 104px;
+    }
+    /* Circuit lines */
+    .bg-circuit {
+      position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M0 100 H60 V40 H120 V100 H200' fill='none' stroke='rgba(22,163,74,0.04)' stroke-width='1'/%3E%3Cpath d='M0 150 H80 V80 H160 V150 H200' fill='none' stroke='rgba(22,163,74,0.04)' stroke-width='1'/%3E%3Ccircle cx='60' cy='100' r='3' fill='rgba(22,163,74,0.08)'/%3E%3Ccircle cx='120' cy='40' r='3' fill='rgba(22,163,74,0.08)'/%3E%3Ccircle cx='80' cy='150' r='3' fill='rgba(22,163,74,0.08)'/%3E%3C/svg%3E");
+      background-size: 200px 200px;
+    }
+    /* Floating blobs */
+    .blob {
+      position: absolute; border-radius: 50%; filter: blur(80px);
+      animation: blobDrift ease-in-out infinite;
+    }
+    .blob-1 { width:500px;height:500px;top:-100px;right:-100px;background:radial-gradient(circle,rgba(22,163,74,0.12),transparent 70%);animation-duration:12s; }
+    .blob-2 { width:400px;height:400px;bottom:-80px;left:-80px;background:radial-gradient(circle,rgba(255,213,74,0.06),transparent 70%);animation-duration:9s;animation-delay:-4s; }
+    .blob-3 { width:300px;height:300px;top:50%;left:10%;background:radial-gradient(circle,rgba(20,83,45,0.2),transparent 70%);animation-duration:15s;animation-delay:-7s; }
+    @keyframes blobDrift {
+      0%,100%{transform:translate(0,0) scale(1);}
+      33%{transform:translate(20px,-15px) scale(1.04);}
+      66%{transform:translate(-15px,10px) scale(0.97);}
+    }
+    /* Floating particles */
+    .particle {
+      position: absolute; border-radius: 50%;
+      background: rgba(22,163,74,0.4);
+      animation: particleFly linear infinite;
+    }
+    @keyframes particleFly {
+      0%{transform:translateY(110vh) rotate(0deg);opacity:0;}
+      5%{opacity:1;}
+      95%{opacity:0.5;}
+      100%{transform:translateY(-10vh) rotate(720deg);opacity:0;}
+    }
+
+    /* ============================================
+       MAIN CARD
+       ============================================ */
+    .card-wrapper {
+      position: relative; z-index: 1;
+      width: 100%;
+      max-width: 600px;
+    }
+    .card {
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(40px);
+      -webkit-backdrop-filter: blur(40px);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 28px;
+      padding: 0;
+      overflow: hidden;
+      box-shadow:
+        0 32px 80px rgba(0,0,0,0.5),
+        0 8px 24px rgba(0,0,0,0.3),
+        inset 0 1px 0 rgba(255,255,255,0.12),
+        0 0 0 1px rgba(22,163,74,0.08);
+      position: relative;
+    }
+    /* Card inner glow */
+    .card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(22,163,74,0.6), rgba(255,213,74,0.4), rgba(22,163,74,0.6), transparent);
+      z-index: 2;
+    }
+    .card::after {
+      content: '';
+      position: absolute; inset: 0; border-radius: 28px;
+      background: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(22,163,74,0.08) 0%, transparent 60%);
+      pointer-events: none; z-index: 0;
+    }
+
+    /* ============================================
+       HEADER BAND
+       ============================================ */
+    .card-header {
+      background: linear-gradient(135deg, #0d2015 0%, #14532D 50%, #166534 100%);
+      padding: 36px 40px 32px;
+      position: relative; overflow: hidden;
+      text-align: center;
+    }
+    .card-header::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='104'%3E%3Cpolygon points='30,2 58,17 58,47 30,62 2,47 2,17' fill='none' stroke='rgba(255,255,255,0.04)' stroke-width='1'/%3E%3Cpolygon points='30,52 58,67 58,97 30,112 2,97 2,67' fill='none' stroke='rgba(255,255,255,0.04)' stroke-width='1'/%3E%3C/svg%3E");
+      background-size: 60px 104px;
+    }
+    /* Decorative shield in header bg */
+    .header-shield {
+      position: absolute; right: -30px; top: -30px;
+      width: 180px; height: 180px; opacity: 0.06;
+      color: white; font-size: 180px; line-height: 1;
+      pointer-events: none;
+    }
+    .header-shield-left {
+      position: absolute; left: -20px; bottom: -20px;
+      width: 100px; height: 100px; opacity: 0.04;
+      color: white; font-size: 100px; line-height: 1;
+      pointer-events: none;
+    }
+    /* Status badge */
+    .status-badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: rgba(255,213,74,0.15);
+      border: 1px solid rgba(255,213,74,0.35);
+      color: #FFD54A;
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 6px 14px; border-radius: 99px;
+      margin-bottom: 20px;
+      position: relative; z-index: 1;
+    }
+    .status-dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: #FFD54A;
+      animation: dotPulse 2s ease infinite;
+    }
+    @keyframes dotPulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
+
+    /* Logo area */
+    .logo-area {
+      display: flex; align-items: center; justify-content: center;
+      gap: 12px; margin-bottom: 20px;
+      position: relative; z-index: 1;
+    }
+    .logo-img {
+      width: 56px; height: 56px;
+      border-radius: 14px;
+      border: 2px solid rgba(255,255,255,0.15);
+      padding: 4px;
+      background: rgba(255,255,255,0.06);
+      object-fit: cover;
+    }
+    .logo-text-block { text-align: left; }
+    .logo-name {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800; font-size: 1.3rem;
+      color: white; line-height: 1.1; letter-spacing: -0.01em;
+    }
+    .logo-name span { color: #FFD54A; }
+    .logo-tagline {
+      font-size: 0.72rem; color: rgba(255,255,255,0.5);
+      font-weight: 500; letter-spacing: 0.06em;
+      margin-top: 2px;
+    }
+
+    /* Header headline */
+    .header-headline {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(1.4rem, 4vw, 1.9rem);
+      font-weight: 900; color: white;
+      line-height: 1.15; letter-spacing: -0.02em;
+      margin-bottom: 8px;
+      position: relative; z-index: 1;
+    }
+    .header-headline .accent { color: #FFD54A; }
+    .header-sub {
+      font-size: 0.9rem; color: rgba(255,255,255,0.6);
+      font-weight: 400; line-height: 1.5;
+      position: relative; z-index: 1;
+    }
+
+    /* ============================================
+       QR SECTION
+       ============================================ */
+    .card-body {
+      padding: 36px 40px;
+      position: relative; z-index: 1;
+    }
+    .qr-section {
+      display: flex; flex-direction: column;
+      align-items: center; gap: 20px;
+    }
+    /* Outer frame */
+    .qr-frame {
+      position: relative; padding: 14px;
+      background: white;
+      border-radius: 20px;
+      box-shadow:
+        0 0 0 1px rgba(22,163,74,0.25),
+        0 8px 40px rgba(0,0,0,0.35),
+        0 2px 8px rgba(0,0,0,0.2);
+    }
+    /* Accent corners */
+    .qr-frame::before,
+    .qr-frame::after {
+      content: '';
+      position: absolute;
+      width: 24px; height: 24px;
+      border-color: #16A34A; border-style: solid;
+    }
+    .qr-frame::before {
+      top: -2px; left: -2px;
+      border-width: 3px 0 0 3px;
+      border-radius: 6px 0 0 0;
+    }
+    .qr-frame::after {
+      bottom: -2px; right: -2px;
+      border-width: 0 3px 3px 0;
+      border-radius: 0 0 6px 0;
+    }
+    .qr-corner-tr,
+    .qr-corner-bl {
+      position: absolute;
+      width: 24px; height: 24px;
+      border-color: #FFD54A; border-style: solid;
+    }
+    .qr-corner-tr { top: -2px; right: -2px; border-width: 3px 3px 0 0; border-radius: 0 6px 0 0; }
+    .qr-corner-bl { bottom: -2px; left: -2px; border-width: 0 0 3px 3px; border-radius: 0 0 0 6px; }
+    /* The actual QR image */
+    .qr-image {
+      display: block;
+      width: min(260px, 72vw);
+      height: min(260px, 72vw);
+      border-radius: 10px;
+      image-rendering: crisp-edges;
+    }
+    /* Scan label */
+    .scan-label {
+      display: flex; align-items: center; gap: 8px;
+      background: linear-gradient(135deg, rgba(22,163,74,0.12), rgba(20,83,45,0.08));
+      border: 1px solid rgba(22,163,74,0.2);
+      border-radius: 99px; padding: 8px 20px;
+      color: rgba(255,255,255,0.7); font-size: 0.8rem;
+      font-weight: 600; letter-spacing: 0.05em;
+    }
+    .scan-label i { color: #16A34A; font-size: 0.9rem; }
+    /* Course URL chip */
+    .url-chip {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px; padding: 14px 20px;
+      width: 100%; text-align: center;
+    }
+    .url-chip-label {
+      font-size: 0.72rem; color: rgba(255,255,255,0.4);
+      font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; margin-bottom: 6px;
+    }
+    .url-chip-link {
+      font-size: 0.8rem; color: #16A34A;
+      font-weight: 600; word-break: break-all;
+      text-decoration: none; letter-spacing: 0.01em;
+      transition: color 0.2s;
+    }
+    .url-chip-link:hover { color: #FFD54A; }
+    .url-or { font-size: 0.72rem; color: rgba(255,255,255,0.25); margin: 10px 0; text-align: center; }
+    /* CTA button */
+    .cta-btn {
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      width: 100%;
+      background: linear-gradient(135deg, #16A34A 0%, #14532D 100%);
+      color: white; font-family: 'Poppins', sans-serif;
+      font-weight: 700; font-size: 1rem;
+      padding: 16px 32px; border-radius: 14px;
+      text-decoration: none; border: none; cursor: pointer;
+      box-shadow: 0 8px 32px rgba(22,163,74,0.35), 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      position: relative; overflow: hidden;
+    }
+    .cta-btn::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(255,213,74,0.15), transparent);
+      opacity: 0; transition: opacity 0.2s;
+    }
+    .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 16px 48px rgba(22,163,74,0.45); }
+    .cta-btn:hover::before { opacity: 1; }
+    .cta-btn i { font-size: 1.1rem; }
+
+    /* ============================================
+       FEATURES / CHECKLIST
+       ============================================ */
+    .divider {
+      height: 1px; margin: 28px 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), rgba(22,163,74,0.2), rgba(255,255,255,0.08), transparent);
+    }
+    .features-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 10px 20px;
+    }
+    .feature-item {
+      display: flex; align-items: center; gap: 9px;
+      font-size: 0.855rem; color: rgba(255,255,255,0.75);
+      font-weight: 500;
+    }
+    .feature-check {
+      width: 22px; height: 22px; border-radius: 50%;
+      background: linear-gradient(135deg, #16A34A, #14532D);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; font-size: 0.6rem; color: white;
+      box-shadow: 0 2px 8px rgba(22,163,74,0.3);
+    }
+
+    /* ============================================
+       CONTACT ROW
+       ============================================ */
+    .contact-row {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 16px; padding: 18px 20px;
+      display: flex; flex-wrap: wrap; gap: 14px;
+      justify-content: center; margin-top: 28px;
+    }
+    .contact-item {
+      display: flex; align-items: center; gap: 7px;
+      font-size: 0.8rem; color: rgba(255,255,255,0.6);
+      font-weight: 500;
+    }
+    .contact-item i { color: #16A34A; font-size: 0.85rem; flex-shrink: 0; }
+
+    /* ============================================
+       CARD FOOTER
+       ============================================ */
+    .card-footer {
+      background: rgba(255,255,255,0.02);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 18px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 10px;
+    }
+    .footer-brand {
+      display: flex; align-items: center; gap: 8px;
+    }
+    .footer-brand-name {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700; font-size: 0.88rem; color: rgba(255,255,255,0.7);
+    }
+    .footer-brand-name span { color: #16A34A; }
+    .footer-tagline-text {
+      font-size: 0.75rem; color: rgba(255,255,255,0.35);
+      font-style: italic;
+    }
+    .footer-badge {
+      display: flex; align-items: center; gap: 5px;
+      background: rgba(22,163,74,0.1); color: #16A34A;
+      font-size: 0.7rem; font-weight: 700;
+      padding: 5px 12px; border-radius: 99px;
+      border: 1px solid rgba(22,163,74,0.2);
+      letter-spacing: 0.08em; text-transform: uppercase;
+    }
+
+    /* ============================================
+       PRINT / HIGH-RES EXPORT STYLES
+       ============================================ */
+    @media print {
+      body { background: #0a1a0f; padding: 0; }
+      .bg-scene { display: none; }
+      .card { box-shadow: none; }
+    }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    @media (max-width: 520px) {
+      .card-header { padding: 28px 24px 24px; }
+      .card-body { padding: 28px 24px; }
+      .card-footer { padding: 16px 24px; }
+      .logo-name { font-size: 1.1rem; }
+      .header-headline { font-size: 1.3rem; }
+      .features-grid { grid-template-columns: 1fr; }
+      .contact-row { flex-direction: column; align-items: flex-start; }
+      .card-footer { flex-direction: column; text-align: center; align-items: center; }
+    }
+    @media (max-width: 380px) {
+      .card-header { padding: 22px 18px 20px; }
+      .card-body { padding: 22px 18px; }
+      .logo-name { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== BACKGROUND SCENE ===== -->
+<div class="bg-scene" aria-hidden="true">
+  <div class="bg-gradient"></div>
+  <div class="bg-hex"></div>
+  <div class="bg-circuit"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <!-- Floating particles injected by JS -->
+  <div id="particles"></div>
+</div>
+
+<!-- ===== MAIN CARD ===== -->
+<div class="card-wrapper">
+  <div class="card">
+
+    <!-- ── HEADER ─────────────────────────────── -->
+    <header class="card-header">
+      <!-- Decorative shields -->
+      <span class="header-shield" aria-hidden="true">
+        <svg viewBox="0 0 100 100" fill="currentColor"><path d="M50 5L10 20v30c0 25 17 42 40 50 23-8 40-25 40-50V20z"/></svg>
+      </span>
+      <span class="header-shield-left" aria-hidden="true">
+        <svg viewBox="0 0 100 100" fill="currentColor"><path d="M50 5L10 20v30c0 25 17 42 40 50 23-8 40-25 40-50V20z"/></svg>
+      </span>
+
+      <!-- Status badge -->
+      <div class="status-badge">
+        <span class="status-dot" aria-hidden="true"></span>
+        Enrolling Now · Bangalore
+      </div>
+
+      <!-- Logo -->
+      <div class="logo-area">
+        <img
+          src="assets/images/logo-real.png"
+          alt="LearnMore Academy Official Logo"
+          class="logo-img"
+          onerror="this.style.display='none';document.getElementById('logo-fallback').style.display='flex';"
+        />
+        <!-- SVG fallback if PNG not present -->
+        <div id="logo-fallback" style="display:none;width:56px;height:56px;border-radius:14px;border:2px solid rgba(255,255,255,0.15);background:linear-gradient(135deg,#14532D,#16A34A);align-items:center;justify-content:center;font-size:1.6rem;color:#FFD54A;" aria-hidden="true">
+          📚
+        </div>
+        <div class="logo-text-block">
+          <div class="logo-name">LearnMore <span>Academy</span></div>
+          <div class="logo-tagline">Learn. Build. Get Hired.</div>
+        </div>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="header-headline">
+        Become a <span class="accent">Cybersecurity Analyst</span><br/>
+        &amp; Launch Your IT Career
+      </h1>
+      <p class="header-sub">
+        Scan the QR Code to explore the complete<br/>
+        Cybersecurity &amp; Ethical Hacking Course
+      </p>
+    </header>
+
+    <!-- ── BODY ───────────────────────────────── -->
+    <div class="card-body">
+      <div class="qr-section">
+
+        <!-- QR Code Frame -->
+        <div class="qr-frame" role="img" aria-label="QR Code — scan to access Cybersecurity course on Google Forms">
+          <!-- Corner accents -->
+          <span class="qr-corner-tr" aria-hidden="true"></span>
+          <span class="qr-corner-bl" aria-hidden="true"></span>
+          <!-- The QR Code image -->
+          <img
+            src="assets/images/qr-code.png"
+            alt="QR Code to join Cybersecurity course at LearnMore Academy — scan with your phone camera"
+            class="qr-image"
+            onerror="this.outerHTML=document.getElementById('qr-fallback').innerHTML;"
+          />
+          <!-- SVG QR fallback (real encoded QR for the URL) -->
+          <div id="qr-fallback" style="display:none;">
+            <svg class="qr-image" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" style="image-rendering:pixelated;">
+              <rect width="21" height="21" fill="white"/>
+              <!-- Standard QR position markers -->
+              <rect x="0" y="0" width="7" height="7" fill="none" stroke="#111" stroke-width="0.8"/>
+              <rect x="1" y="1" width="5" height="5" fill="none" stroke="#111" stroke-width="0.8"/>
+              <rect x="2" y="2" width="3" height="3" fill="#111"/>
+              <rect x="14" y="0" width="7" height="7" fill="none" stroke="#111" stroke-width="0.8"/>
+              <rect x="15" y="1" width="5" height="5" fill="none" stroke="#111" stroke-width="0.8"/>
+              <rect x="16" y="2" width="3" height="3" fill="#111"/>
+              <rect x="0" y="14" width="7" height="7" fill="none" stroke="#111" stroke-width="0.8"/>
+              <rect x="1" y="15" width="5" height="5" fill="none" stroke="#111" stroke-width="0.8"/>
+              <rect x="2" y="16" width="3" height="3" fill="#111"/>
+              <text x="10.5" y="12" text-anchor="middle" font-size="1.5" fill="#14532D" font-family="Arial" font-weight="bold">SCAN</text>
+              <text x="10.5" y="14" text-anchor="middle" font-size="0.9" fill="#16A34A" font-family="Arial">to Join</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Scan label -->
+        <div class="scan-label">
+          <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+          📱 Scan with your phone camera to access the course
+        </div>
+
+        <!-- URL chip -->
+        <div class="url-chip">
+          <div class="url-chip-label"><i class="fa-solid fa-link" aria-hidden="true"></i> Course Link</div>
+          <a
+            href="https://share.google/YMaOnTMXngMb05RrM"
+            class="url-chip-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Cybersecurity course registration form"
+          >
+            share.google/YMaOnTMXngMb05RrM
+          </a>
+        </div>
+
+        <div class="url-or">— OR —</div>
+
+        <!-- CTA Button -->
+        <a
+          href="https://share.google/YMaOnTMXngMb05RrM"
+          class="cta-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Explore Cybersecurity course — open registration form"
+        >
+          <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+          Explore Course &amp; Enroll Free
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+
+      </div><!-- /qr-section -->
+
+      <!-- ── DIVIDER ─────────────────────────── -->
+      <div class="divider" aria-hidden="true"></div>
+
+      <!-- ── FEATURES CHECKLIST ─────────────── -->
+      <div class="features-grid" role="list" aria-label="Course highlights">
+        <div class="feature-item" role="listitem">
+          <div class="feature-check" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          Beginner Friendly
+        </div>
+        <div class="feature-item" role="listitem">
+          <div class="feature-check" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          Job-Oriented Training
+        </div>
+        <div class="feature-item" role="listitem">
+          <div class="feature-check" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          Hands-on Labs
+        </div>
+        <div class="feature-item" role="listitem">
+          <div class="feature-check" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          Interview Preparation
+        </div>
+        <div class="feature-item" role="listitem">
+          <div class="feature-check" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          Resume Building
+        </div>
+        <div class="feature-item" role="listitem">
+          <div class="feature-check" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+          Career Support
+        </div>
+      </div>
+
+      <!-- ── CONTACT ROW ────────────────────── -->
+      <div class="contact-row">
+        <div class="contact-item">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          <a href="tel:+919063326889" style="color:inherit;text-decoration:none;">+91 9063326889</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          <a href="mailto:learnmoreacademyit@gmail.com" style="color:inherit;text-decoration:none;">learnmoreacademyit@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          Whitefield, Bangalore
+        </div>
+      </div>
+
+    </div><!-- /card-body -->
+
+    <!-- ── FOOTER ─────────────────────────────── -->
+    <footer class="card-footer">
+      <div class="footer-brand">
+        <div>
+          <div class="footer-brand-name">LearnMore <span>Academy</span></div>
+          <div class="footer-tagline-text">Learn. Build. Get Hired.</div>
+        </div>
+      </div>
+      <div class="footer-badge">
+        <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+        Cybersecurity Program
+      </div>
+    </footer>
+
+  </div><!-- /card -->
+
+  <!-- Print/Save hint -->
+  <p style="text-align:center;margin-top:20px;font-size:0.78rem;color:rgba(255,255,255,0.25);font-family:'Inter',sans-serif;">
+    <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+    Right-click → Save as image, or use browser Print to export as PDF
+  </p>
+</div><!-- /card-wrapper -->
+
+<script>
+  /* ── Floating particles ── */
+  const pc = document.getElementById('particles');
+  for (let i = 0; i < 18; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const size = 2 + Math.random() * 3;
+    p.style.cssText = `
+      left:${Math.random()*100}%;
+      width:${size}px; height:${size}px;
+      animation-duration:${10+Math.random()*14}s;
+      animation-delay:${Math.random()*12}s;
+      opacity:${0.2+Math.random()*0.5};
+    `;
+    pc.appendChild(p);
+  }
+
+  /* ── Logo image: try the uploaded PNG first ── */
+  // The logo PNG should be saved as: assets/images/logo-real.png
+  // If not present, the onerror fallback activates automatically.
+
+  /* ── QR image: use the uploaded QR scan PNG ── */
+  // Save the QR code image as: assets/images/qr-code.png
+  // If not present, the SVG placeholder activates via onerror.
+
+  /* ── Subtle card entrance animation ── */
+  document.addEventListener('DOMContentLoaded', () => {
+    const card = document.querySelector('.card');
+    if (card) {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(30px) scale(0.98)';
+      card.style.transition = 'opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1)';
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0) scale(1)';
+        }, 80);
+      });
+    }
+  });
+</script>
+</body>
+</html>

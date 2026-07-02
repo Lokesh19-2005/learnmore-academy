@@ -1,0 +1,30 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if ever added)
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# Build output
+dist/
+build/
+
+# Vercel
+.vercel/
+
+# Env
+.env
+.env.local
+.env.*
+
+# Docs only
+assets/images/README-assets.txt

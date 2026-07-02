@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>LearnMore Academy — Learn. Build. Get Hired. | IT Training in Bangalore</title>
+  <meta name="description" content="LearnMore Academy offers job-oriented IT training in Cybersecurity, AI, Data Science, DevOps, SAP & Digital Marketing in Bangalore. Learn. Build. Get Hired."/>
+  <meta name="keywords" content="IT training Bangalore, cybersecurity course, ethical hacking, data science, AI course, DevOps, SAP training, digital marketing, Whitefield Bangalore"/>
+  <meta name="author" content="LearnMore Academy"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://learnmoreacademy.in/"/>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="LearnMore Academy — Learn. Build. Get Hired."/>
+  <meta property="og:description" content="Job-oriented IT training in Bangalore. Cybersecurity, AI, Data Science, DevOps, SAP & more."/>
+  <meta property="og:url" content="https://learnmoreacademy.in/"/>
+  <meta property="og:image" content="assets/images/og-image.svg"/>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="LearnMore Academy — Learn. Build. Get Hired."/>
+  <meta name="twitter:description" content="Job-oriented IT training in Bangalore."/>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg"/>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#14532D', secondary: '#16A34A',
+            accent: '#FFD54A', dark: '#111827',
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css"/>
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "LearnMore Academy",
+    "description": "Job-oriented IT training institute in Bangalore offering Cybersecurity, AI, Data Science, and more.",
+    "url": "https://learnmoreacademy.in",
+    "telephone": "+91-9063326889",
+    "email": "learnmoreacademyit@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Whitefield, Bangalore",
+      "addressRegion": "Karnataka",
+      "addressCountry": "IN"
+    },
+    "openingHours": "Mo-Fr 10:00-19:00"
+  }
+  </script>
+</head>
+<body>
+
+<!-- ===== LOADING SCREEN ===== -->
+<div id="loading-screen" role="status" aria-label="Loading LearnMore Academy">
+  <img src="assets/images/logo.svg" alt="LearnMore Academy Logo" class="loader-logo" width="80" height="80"/>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  <p class="loader-text">Loading LearnMore Academy...</p>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo" aria-label="LearnMore Academy Home">
+      <img src="assets/images/logo.svg" alt="LearnMore Academy" width="42" height="42"/>
+      <span class="nav-logo-text">LearnMore <span>Academy</span></span>
+    </a>
+    <div class="nav-links" role="menubar">
+      <a href="index.html" class="nav-link" role="menuitem">Home</a>
+      <a href="about.html" class="nav-link" role="menuitem">About</a>
+      <a href="courses.html" class="nav-link" role="menuitem">Courses</a>
+      <a href="cybersecurity.html" class="nav-link" role="menuitem">Cybersecurity</a>
+      <a href="contact.html" class="nav-link" role="menuitem">Contact</a>
+    </div>
+    <a href="cybersecurity.html" class="nav-cta btn" aria-label="Enroll Now in Cybersecurity">
+      <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Enroll Now
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
+  <div class="mobile-nav-links">
+    <a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a>
+    <a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-info-circle" aria-hidden="true"></i> About</a>
+    <a href="courses.html" class="mobile-nav-link"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Courses</a>
+    <a href="cybersecurity.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Cybersecurity</a>
+    <a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact</a>
+    <div class="mobile-nav-divider"></div>
+    <a href="cybersecurity.html" class="mobile-nav-cta btn">
+      <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Enroll Now — Free Counselling
+    </a>
+  </div>
+</div>
+
+<!-- ===== HERO SECTION ===== -->
+<main>
+<section class="hero" id="hero" aria-label="Hero section">
+  <div class="hero-bg-elements" aria-hidden="true">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-blob hero-blob-3"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="hero-container">
+    <!-- Left Content -->
+    <div class="hero-content">
+      <div class="hero-badge" data-aos="fade-down">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        Now Enrolling — Cybersecurity Batch
+      </div>
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+        Launch Your Career as a
+        <span class="line-green">
+          <span id="typed-text" aria-label="IT Professional"></span>
+        </span>
+      </h1>
+      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+        LearnMore Academy delivers job-focused IT training designed for real-world success. From fundamentals to advanced skills — we build careers, not just knowledge.
+      </p>
+      <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+        <a href="https://share.google/YMaOnTMXngMb05RrM" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-lg">
+          <i class="fa-solid fa-rocket" aria-hidden="true"></i> Register Now — It's Free
+        </a>
+        <a href="#courses" class="btn btn-secondary btn-lg">
+          <i class="fa-solid fa-play-circle" aria-hidden="true"></i> Explore Courses
+        </a>
+      </div>
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+        <div class="hero-stat-item">
+          <span class="hero-stat-number" data-counter="500" data-suffix="+">500+</span>
+          <span class="hero-stat-label">Students Trained</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat-item">
+          <span class="hero-stat-number" data-counter="95" data-suffix="%">95%</span>
+          <span class="hero-stat-label">Placement Rate</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat-item">
+          <span class="hero-stat-number" data-counter="10" data-suffix="+">10+</span>
+          <span class="hero-stat-label">Expert Courses</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat-item">
+          <span class="hero-stat-number" data-counter="4" data-suffix=".8★">4.8★</span>
+          <span class="hero-stat-label">Student Rating</span>
+        </div>
+      </div>
+    </div>
+    <!-- Right Visual -->
+    <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+      <div class="hero-main-card">
+        <div class="hero-card-header">
+          <div class="hero-card-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+          <div>
+            <div class="hero-card-title">Cybersecurity Program</div>
+            <div class="hero-card-sub">⚡ Available Now · 6 Months</div>
+          </div>
+        </div>
+        <div class="hero-modules">
+          <div class="hero-module-item">
+            <div class="hero-module-check"><i class="fa-solid fa-check" aria-hidden="true"></i></div>
+            <span class="hero-module-text">Network Security & Ethical Hacking</span>
+          </div>
+          <div class="hero-module-item">
+            <div class="hero-module-check"><i class="fa-solid fa-check" aria-hidden="true"></i></div>
+            <span class="hero-module-text">Penetration Testing & VAPT</span>
+          </div>
+          <div class="hero-module-item">
+            <div class="hero-module-check"><i class="fa-solid fa-check" aria-hidden="true"></i></div>
+            <span class="hero-module-text">SOC Operations & SIEM Tools</span>
+          </div>
+          <div class="hero-module-item">
+            <div class="hero-module-check"><i class="fa-solid fa-check" aria-hidden="true"></i></div>
+            <span class="hero-module-text">Interview Prep & Resume Building</span>
+          </div>
+        </div>
+        <div class="hero-card-progress">
+          <div class="hero-progress-label">
+            <span>Course Progress</span><span>70% Complete</span>
+          </div>
+          <div class="hero-progress-bar"><div class="hero-progress-fill"></div></div>
+        </div>
+      </div>
+      <!-- Floating Cards -->
+      <div class="hero-float-card hero-float-card-1" aria-hidden="true">
+        <div class="float-icon green"><i class="fa-solid fa-trophy"></i></div>
+        <div>
+          <div class="float-text">Certified Students</div>
+          <div class="float-sub">500+ Graduates</div>
+        </div>
+      </div>
+      <div class="hero-float-card hero-float-card-2" aria-hidden="true">
+        <div class="float-icon yellow"><i class="fa-solid fa-star"></i></div>
+        <div>
+          <div class="float-text">4.8/5 Rating</div>
+          <div class="float-sub">Google Reviews</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUSTED BY / HIRING PARTNERS ===== -->
+<section class="trusted-section" aria-label="Trusted by companies">
+  <div class="container">
+    <p class="trusted-label">Our Students Now Work At</p>
+    <div class="trusted-logos">
+      <div class="trusted-logo-item"><i class="fa-brands fa-google" aria-hidden="true"></i> Google</div>
+      <div class="trusted-logo-item"><i class="fa-brands fa-amazon" aria-hidden="true"></i> Amazon</div>
+      <div class="trusted-logo-item"><i class="fa-brands fa-microsoft" aria-hidden="true"></i> Microsoft</div>
+      <div class="trusted-logo-item"><i class="fa-brands fa-infosys" aria-hidden="true"></i><i class="fa-solid fa-building" aria-hidden="true"></i> Infosys</div>
+      <div class="trusted-logo-item"><i class="fa-solid fa-database" aria-hidden="true"></i> Wipro</div>
+      <div class="trusted-logo-item"><i class="fa-solid fa-code" aria-hidden="true"></i> TCS</div>
+      <div class="trusted-logo-item"><i class="fa-brands fa-ibm" aria-hidden="true"></i> IBM</div>
+      <div class="trusted-logo-item"><i class="fa-solid fa-network-wired" aria-hidden="true"></i> Cisco</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS SECTION ===== -->
+<section class="stats-section" aria-label="Academy statistics">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item" data-aos="fade-up">
+        <div class="stat-number" data-counter="500" data-suffix="+">500+</div>
+        <div class="stat-label">Students Trained</div>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-number" data-counter="95" data-suffix="%">95%</div>
+        <div class="stat-label">Placement Success Rate</div>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-number" data-counter="6" data-suffix="+">6+</div>
+        <div class="stat-label">IT Domains Covered</div>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-number" data-counter="100" data-suffix="%">100%</div>
+        <div class="stat-label">Hands-on Training</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT SECTION ===== -->
+<section class="section" id="about" aria-label="About LearnMore Academy">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual" data-aos="fade-right">
+        <div class="about-img-container">
+          <div class="about-img-placeholder" role="img" aria-label="LearnMore Academy Training Environment">
+            <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+            <p style="font-size:0.9rem;opacity:0.7;text-align:center;padding:0 20px;">Real-world IT training for real career growth</p>
+          </div>
+        </div>
+        <div class="about-stat-card top-left" data-aos="zoom-in" data-aos-delay="300">
+          <div class="about-stat-number">6+</div>
+          <div class="about-stat-text">IT Domains</div>
+        </div>
+        <div class="about-stat-card bottom-right" data-aos="zoom-in" data-aos-delay="400">
+          <div class="about-stat-number">500+</div>
+          <div class="about-stat-text">Students Placed</div>
+        </div>
+      </div>
+      <div class="about-text" data-aos="fade-left">
+        <span class="section-label"><i class="fa-solid fa-info-circle" aria-hidden="true"></i> About Us</span>
+        <h2 class="section-title">Where Learning Meets <span class="highlight">Career Transformation</span></h2>
+        <div class="gradient-divider"></div>
+        <p class="section-subtitle">
+          LearnMore Academy is a job-oriented IT training institute based in Whitefield, Bangalore. We help students, graduates, and working professionals transition into high-paying IT careers with hands-on, industry-aligned training.
+        </p>
+        <div class="about-features" style="margin-top:28px;">
+          <div class="about-feature-item">
+            <div class="about-feature-icon"><i class="fa-solid fa-language" aria-hidden="true"></i></div>
+            <div>
+              <div class="about-feature-title">Easy English Instruction</div>
+              <div class="about-feature-desc">Complex IT concepts explained in plain, simple English everyone can understand.</div>
+            </div>
+          </div>
+          <div class="about-feature-item">
+            <div class="about-feature-icon"><i class="fa-solid fa-flask" aria-hidden="true"></i></div>
+            <div>
+              <div class="about-feature-title">100% Hands-on Labs</div>
+              <div class="about-feature-desc">Practice on real tools and live environments — not just theory and slides.</div>
+            </div>
+          </div>
+          <div class="about-feature-item">
+            <div class="about-feature-icon"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></div>
+            <div>
+              <div class="about-feature-title">Career-First Approach</div>
+              <div class="about-feature-desc">Resume building, interview prep, and soft skills included in every course.</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:32px;">
+          <a href="about.html" class="btn btn-primary">
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Learn More About Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COURSES SECTION ===== -->
+<section class="section" id="courses" style="background:var(--light-2);" aria-label="Our courses">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <span class="section-label"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Our Programs</span>
+      <h2 class="section-title">Choose Your <span class="highlight">Career Path</span></h2>
+      <div class="gradient-divider center"></div>
+      <p class="section-subtitle">Industry-aligned courses built with real-world curriculum. Every course is designed to get you job-ready from day one.</p>
+    </div>
+    <div class="courses-grid">
+      <!-- Cybersecurity -->
+      <article class="course-card" data-aos="fade-up" data-aos-delay="50">
+        <div class="course-card-img">
+          <div class="course-card-img-bg cyber">
+            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+          </div>
+          <span class="course-badge available">Available Now</span>
+        </div>
+        <div class="course-card-body">
+          <div class="course-card-category">Security &amp; Networking</div>
+          <h3 class="course-card-title">Cybersecurity &amp; Ethical Hacking</h3>
+          <p class="course-card-desc">Master network security, ethical hacking, penetration testing, SOC operations, and cyber forensics with hands-on labs and real-world projects.</p>
+          <div class="course-card-meta">
+            <span class="course-meta-item"><i class="fa-regular fa-clock" aria-hidden="true"></i> 6 Months</span>
+            <span class="course-meta-item"><i class="fa-solid fa-flask" aria-hidden="true"></i> 40+ Labs</span>
+            <span class="course-meta-item"><i class="fa-solid fa-certificate" aria-hidden="true"></i> Certified</span>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-card-level">
+              <span style="font-size:0.78rem;color:var(--text-muted);">Level:</span>
+              <div class="level-dots" aria-label="Beginner to Advanced level">
+                <div class="level-dot filled"></div><div class="level-dot filled"></div><div class="level-dot filled"></div>
+              </div>
+              <span style="font-size:0.78rem;color:var(--text-secondary);">All Levels</span>
+            </div>
+            <div style="display:flex;gap:8px;">
+              <a href="cybersecurity.html" class="btn btn-ghost btn-sm" aria-label="View course details">Details</a>
+              <a href="https://share.google/YMaOnTMXngMb05RrM" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="Register for Cybersecurity course">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Data Science -->
+      <article class="course-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="course-card-img">
+          <div class="course-card-img-bg data">
+            <i class="fa-solid fa-chart-bar" aria-hidden="true"></i>
+          </div>
+          <span class="course-badge coming-soon">Coming Soon</span>
+        </div>
+        <div class="course-card-body">
+          <div class="course-card-category">Data &amp; Analytics</div>
+          <h3 class="course-card-title">Data Science &amp; Analytics</h3>
+          <p class="course-card-desc">Learn Python, machine learning, data visualization, and statistical analysis to become a sought-after data professional.</p>
+          <div class="course-card-meta">
+            <span class="course-meta-item"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 Months</span>
+            <span class="course-meta-item"><i class="fa-solid fa-flask" aria-hidden="true"></i> 30+ Labs</span>
+            <span class="course-meta-item"><i class="fa-solid fa-certificate" aria-hidden="true"></i> Certified</span>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-card-level">
+              <div class="level-dots" aria-label="Beginner to Intermediate level">
+                <div class="level-dot filled"></div><div class="level-dot filled"></div><div class="level-dot"></div>
+              </div>
+              <span style="font-size:0.78rem;color:var(--text-secondary);">Intermediate</span>
+            </div>
+            <button class="btn btn-secondary btn-sm" disabled aria-label="Coming Soon">Notify Me</button>
+          </div>
+        </div>
+      </article>
+      <!-- AI -->
+      <article class="course-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="course-card-img">
+          <div class="course-card-img-bg ai">
+            <i class="fa-solid fa-brain" aria-hidden="true"></i>
+          </div>
+          <span class="course-badge coming-soon">Coming Soon</span>
+        </div>
+        <div class="course-card-body">
+          <div class="course-card-category">Artificial Intelligence</div>
+          <h3 class="course-card-title">Artificial Intelligence &amp; ML</h3>
+          <p class="course-card-desc">Build intelligent systems using deep learning, NLP, and computer vision. Work on projects that solve real business problems.</p>
+          <div class="course-card-meta">
+            <span class="course-meta-item"><i class="fa-regular fa-clock" aria-hidden="true"></i> 6 Months</span>
+            <span class="course-meta-item"><i class="fa-solid fa-flask" aria-hidden="true"></i> 35+ Labs</span>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-card-level">
+              <div class="level-dots" aria-label="Advanced level">
+                <div class="level-dot filled"></div><div class="level-dot filled"></div><div class="level-dot filled"></div>
+              </div>
+              <span style="font-size:0.78rem;color:var(--text-secondary);">Advanced</span>
+            </div>
+            <button class="btn btn-secondary btn-sm" disabled>Notify Me</button>
+          </div>
+        </div>
+      </article>
+      <!-- DevOps -->
+      <article class="course-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="course-card-img">
+          <div class="course-card-img-bg devops">
+            <i class="fa-brands fa-docker" aria-hidden="true"></i>
+          </div>
+          <span class="course-badge coming-soon">Coming Soon</span>
+        </div>
+        <div class="course-card-body">
+          <div class="course-card-category">Cloud &amp; DevOps</div>
+          <h3 class="course-card-title">DevOps &amp; Cloud Engineering</h3>
+          <p class="course-card-desc">Master Docker, Kubernetes, CI/CD pipelines, AWS, and infrastructure automation for modern cloud-native development.</p>
+          <div class="course-card-meta">
+            <span class="course-meta-item"><i class="fa-regular fa-clock" aria-hidden="true"></i> 4 Months</span>
+            <span class="course-meta-item"><i class="fa-solid fa-flask" aria-hidden="true"></i> 25+ Labs</span>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-card-level">
+              <div class="level-dots"><div class="level-dot filled"></div><div class="level-dot filled"></div><div class="level-dot"></div></div>
+              <span style="font-size:0.78rem;color:var(--text-secondary);">Intermediate</span>
+            </div>
+            <button class="btn btn-secondary btn-sm" disabled>Notify Me</button>
+          </div>
+        </div>
+      </article>
+      <!-- SAP -->
+      <article class="course-card" data-aos="fade-up" data-aos-delay="250">
+        <div class="course-card-img">
+          <div class="course-card-img-bg sap">
+            <i class="fa-solid fa-database" aria-hidden="true"></i>
+          </div>
+          <span class="course-badge coming-soon">Coming Soon</span>
+        </div>
+        <div class="course-card-body">
+          <div class="course-card-category">Enterprise Software</div>
+          <h3 class="course-card-title">SAP Training &amp; Certification</h3>
+          <p class="course-card-desc">Gain expertise in SAP modules including SAP FICO, SAP MM, and SAP SD used by Fortune 500 companies worldwide.</p>
+          <div class="course-card-meta">
+            <span class="course-meta-item"><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 Months</span>
+            <span class="course-meta-item"><i class="fa-solid fa-certificate" aria-hidden="true"></i> Certified</span>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-card-level">
+              <div class="level-dots"><div class="level-dot filled"></div><div class="level-dot"></div><div class="level-dot"></div></div>
+              <span style="font-size:0.78rem;color:var(--text-secondary);">Beginner</span>
+            </div>
+            <button class="btn btn-secondary btn-sm" disabled>Notify Me</button>
+          </div>
+        </div>
+      </article>
+      <!-- Digital Marketing -->
+      <article class="course-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="course-card-img">
+          <div class="course-card-img-bg marketing">
+            <i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
+          </div>
+          <span class="course-badge coming-soon">Coming Soon</span>
+        </div>
+        <div class="course-card-body">
+          <div class="course-card-category">Digital Marketing</div>
+          <h3 class="course-card-title">Digital Marketing Mastery</h3>
+          <p class="course-card-desc">Learn SEO, social media marketing, Google Ads, content marketing, and analytics to drive real business growth online.</p>
+          <div class="course-card-meta">
+            <span class="course-meta-item"><i class="fa-regular fa-clock" aria-hidden="true"></i> 3 Months</span>
+            <span class="course-meta-item"><i class="fa-solid fa-project-diagram" aria-hidden="true"></i> Live Projects</span>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-card-level">
+              <div class="level-dots"><div class="level-dot filled"></div><div class="level-dot"></div><div class="level-dot"></div></div>
+              <span style="font-size:0.78rem;color:var(--text-secondary);">Beginner</span>
+            </div>
+            <button class="btn btn-secondary btn-sm" disabled>Notify Me</button>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="text-center" style="margin-top:48px;" data-aos="fade-up">
+      <a href="courses.html" class="btn btn-primary btn-lg">
+        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i> View All Courses
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CYBERSECURITY HIGHLIGHT ===== -->
+<section class="section cta-section" aria-label="Cybersecurity course highlight">
+  <div class="container cta-content">
+    <div data-aos="fade-up">
+      <span class="section-label" style="background:rgba(255,213,74,0.15);color:var(--accent);border-color:rgba(255,213,74,0.3);">
+        <i class="fa-solid fa-fire" aria-hidden="true"></i> Now Available
+      </span>
+      <h2 class="cta-title">Cybersecurity — <span style="color:var(--accent);">Our Flagship Program</span></h2>
+      <p class="cta-subtitle">Comprehensive 6-month cybersecurity training covering ethical hacking, network security, penetration testing, and job placement support.</p>
+      <div class="cta-actions">
+        <a href="cybersecurity.html" class="btn btn-white btn-lg">
+          <i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Explore Cybersecurity Course
+        </a>
+        <a href="https://share.google/YMaOnTMXngMb05RrM" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-lg">
+          <i class="fa-solid fa-rocket" aria-hidden="true"></i> Register Free — Google Form
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY CHOOSE US ===== -->
+<section class="section why-bg" id="why" aria-label="Why choose LearnMore Academy">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <span class="section-label" style="background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.8);border-color:rgba(255,255,255,0.15);">
+        <i class="fa-solid fa-star" aria-hidden="true"></i> Why Choose Us
+      </span>
+      <h2 class="section-title" style="color:white;">Everything You Need to <span style="color:var(--accent);">Get Hired</span></h2>
+      <div class="gradient-divider center"></div>
+      <p class="section-subtitle" style="color:rgba(255,255,255,0.6);">We go far beyond course content. Every learner gets career-focused support from day one to job placement.</p>
+    </div>
+    <div class="why-grid" role="list">
+      <div class="why-card" role="listitem" data-aos="fade-up" data-aos-delay="50">
+        <div class="why-card-icon"><i class="fa-solid fa-language" aria-hidden="true"></i></div>
+        <h3 class="why-card-title">Easy English Content</h3>
+        <p class="why-card-desc">Technical topics explained simply — anyone can understand regardless of background.</p>
+      </div>
+      <div class="why-card" role="listitem" data-aos="fade-up" data-aos-delay="100">
+        <div class="why-card-icon"><i class="fa-solid fa-seedling" aria-hidden="true"></i></div>
+        <h3 class="why-card-title">Beginner Friendly</h3>
+        <p class="why-card-desc">Zero prior IT experience needed. We take you from fundamentals to advanced skills.</p>
+      </div>
+      <div class="why-card" role="listitem" data-aos="fade-up" data-aos-delay="150">
+        <div class="why-card-icon"><i class="fa-solid fa-industry" aria-hidden="true"></i></div>
+        <h3 class="why-card-title">Industry Curriculum</h3>
+        <p class="why-card-desc">Curriculum designed with industry professionals to match real job requirements.</p>
+      </div>
+      <div class="why-card" role="listitem" data-aos="fade-up" data-aos-delay="200">
+        <div class="why-card-icon"><i class="fa-solid fa-flask" aria-hidden="true"></i></div>
+        <h3 class="why-card-title">Hands-on Labs</h3>
+        <p class="why-card-desc">Practice on real tools, live environments, and simulated scenarios — not just theory.</p>
+      </div>
+      <div class="why-card" role="listitem" data-aos="fade-up" data-aos-delay="250">
+        <div class="why-card-icon"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></div>
+        <h3 class="why-card-title">Real Projects</h3>
+        <p class="why-card-desc">Build a portfolio of real-world projects that impress hiring managers.</p>
+      </div>
+      <div class="why-card" role="listitem" data-aos="fade-up" data-aos-delay="300">
+        <div class="why-card-icon"><i class="fa-solid fa-file-alt" aria-hidden="true"></i></div>
+        <h3 class="why-card-title">Resume Building</h3>
+        <p class="why-card-desc">Professional resume templates crafted specifically for IT job applications.</p>
+      </div>
+      <div class="why-card" role="listitem" data-aos="fade-up" data-aos-delay="350">
+        <div class="why-card-icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></div>
+        <h3 class="why-card-title">Interview Preparation</h3>
+        <p class="why-card-desc">100+ interview Q&amp;As with model answers and mock interview practice.</p>
+      </div>
+      <div class="why-card" role="listitem" data-aos="fade-up" data-aos-delay="400">
+        <div class="why-card-icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div>
+        <h3 class="why-card-title">Soft Skills</h3>
+        <p class="why-card-desc">Communication, teamwork, and professional etiquette training included.</p>
+      </div>
+      <div class="why-card" role="listitem" data-aos="fade-up" data-aos-delay="450">
+        <div class="why-card-icon"><i class="fa-solid fa-road" aria-hidden="true"></i></div>
+        <h3 class="why-card-title">Career Guidance</h3>
+        <p class="why-card-desc">Personalised career roadmap advice based on your goals and background.</p>
+      </div>
+      <div class="why-card" role="listitem" data-aos="fade-up" data-aos-delay="500">
+        <div class="why-card-icon"><i class="fa-solid fa-user-tie" aria-hidden="true"></i></div>
+        <h3 class="why-card-title">1-on-1 Mentoring</h3>
+        <p class="why-card-desc">Optional one-to-one mentoring sessions to accelerate your learning journey.</p>
+      </div>
+      <div class="why-card" role="listitem" data-aos="fade-up" data-aos-delay="550">
+        <div class="why-card-icon"><i class="fa-solid fa-microphone" aria-hidden="true"></i></div>
+        <h3 class="why-card-title">Communication Training</h3>
+        <p class="why-card-desc">Speak confidently in technical interviews and professional environments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LEARNING JOURNEY TIMELINE ===== -->
+<section class="section journey-section" id="journey" aria-label="Your learning journey">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <span class="section-label"><i class="fa-solid fa-map" aria-hidden="true"></i> Your Journey</span>
+      <h2 class="section-title">Your Path from <span class="highlight">Zero to Hired</span></h2>
+      <div class="gradient-divider center"></div>
+      <p class="section-subtitle">A clear, structured roadmap that takes you from complete beginner to job-ready IT professional.</p>
+    </div>
+    <div class="timeline" role="list" style="max-width:760px;margin:48px auto 0;">
+      <div class="timeline-item" role="listitem" data-aos="fade-up" data-aos-delay="50">
+        <div class="timeline-dot"><div class="timeline-dot-inner"><i class="fa-solid fa-flag" aria-hidden="true"></i></div></div>
+        <div class="timeline-content">
+          <div class="timeline-step">Step 01</div>
+          <h3 class="timeline-title">Free Counselling &amp; Enrollment</h3>
+          <p class="timeline-desc">Talk to our career counsellors. Understand the course, ask questions, and enroll when you're ready. No pressure, no hidden fees.</p>
+        </div>
+      </div>
+      <div class="timeline-item" role="listitem" data-aos="fade-up" data-aos-delay="100">
+        <div class="timeline-dot"><div class="timeline-dot-inner"><i class="fa-solid fa-book" aria-hidden="true"></i></div></div>
+        <div class="timeline-content">
+          <div class="timeline-step">Step 02</div>
+          <h3 class="timeline-title">Foundations &amp; Core Concepts</h3>
+          <p class="timeline-desc">Master IT fundamentals in plain English. Build a solid foundation in networking, operating systems, and security basics.</p>
+        </div>
+      </div>
+      <div class="timeline-item" role="listitem" data-aos="fade-up" data-aos-delay="150">
+        <div class="timeline-dot"><div class="timeline-dot-inner"><i class="fa-solid fa-flask" aria-hidden="true"></i></div></div>
+        <div class="timeline-content">
+          <div class="timeline-step">Step 03</div>
+          <h3 class="timeline-title">Hands-on Labs &amp; Projects</h3>
+          <p class="timeline-desc">Apply knowledge in real lab environments. Work on live projects that simulate actual workplace challenges and build your portfolio.</p>
+        </div>
+      </div>
+      <div class="timeline-item" role="listitem" data-aos="fade-up" data-aos-delay="200">
+        <div class="timeline-dot"><div class="timeline-dot-inner"><i class="fa-solid fa-file-alt" aria-hidden="true"></i></div></div>
+        <div class="timeline-content">
+          <div class="timeline-step">Step 04</div>
+          <h3 class="timeline-title">Resume Building &amp; Interview Prep</h3>
+          <p class="timeline-desc">Create an ATS-friendly resume with our templates. Practice 100+ interview questions with model answers. Attend mock interviews.</p>
+        </div>
+      </div>
+      <div class="timeline-item" role="listitem" data-aos="fade-up" data-aos-delay="250">
+        <div class="timeline-dot"><div class="timeline-dot-inner"><i class="fa-solid fa-trophy" aria-hidden="true"></i></div></div>
+        <div class="timeline-content">
+          <div class="timeline-step">Step 05</div>
+          <h3 class="timeline-title">Placement Support &amp; Get Hired</h3>
+          <p class="timeline-desc">Get connected with our hiring partner network. Our placement team actively supports your job search until you land your dream role.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section testimonials-section" id="testimonials" aria-label="Student testimonials">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <span class="section-label"><i class="fa-solid fa-star" aria-hidden="true"></i> Student Reviews</span>
+      <h2 class="section-title">What Our <span class="highlight">Students Say</span></h2>
+      <div class="gradient-divider center"></div>
+      <p class="section-subtitle">Real stories from real students who transformed their careers with LearnMore Academy.</p>
+    </div>
+    <div class="swiper testimonials-swiper" style="margin-top:48px;padding-bottom:48px;" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 star rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="testimonial-quote">LearnMore Academy completely changed my career. I was from a non-IT background, but the easy English teaching style made everything so clear. Got placed as a SOC Analyst within 2 months of completing the course!</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">RK</div>
+              <div>
+                <div class="testimonial-name">Rahul Kumar</div>
+                <div class="testimonial-role">SOC Analyst · Bangalore</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 star rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="testimonial-quote">The hands-on labs are incredible. I actually used real hacking tools and felt like a professional from week two. The interview preparation module alone is worth the entire course fee. Highly recommend!</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">PS</div>
+              <div>
+                <div class="testimonial-name">Priya Sharma</div>
+                <div class="testimonial-role">Penetration Tester · Hyderabad</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 star rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="testimonial-quote">As a working professional switching to cybersecurity, I was worried about managing time. The structured curriculum and personalized mentoring made it easy to balance work and studies. Best investment I've made!</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">AM</div>
+              <div>
+                <div class="testimonial-name">Arjun Menon</div>
+                <div class="testimonial-role">Cybersecurity Engineer · Chennai</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 star rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="testimonial-quote">I joined after completing my B.Sc with no IT knowledge. The trainers are patient, the content is practical, and the placement support is genuine. I'm now a Vulnerability Analyst earning 6 LPA!</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">SN</div>
+              <div>
+                <div class="testimonial-name">Sneha Nair</div>
+                <div class="testimonial-role">Vulnerability Analyst · Pune</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 star rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <p class="testimonial-quote">The communication skills training was an unexpected bonus. I'm technically strong now, but more importantly, I can confidently explain my knowledge during interviews. That's what sets LearnMore apart.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">VR</div>
+              <div>
+                <div class="testimonial-name">Vikram Reddy</div>
+                <div class="testimonial-role">IT Security Analyst · Bangalore</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination" style="bottom:0;"></div>
+      <div class="swiper-button-prev" aria-label="Previous testimonial"></div>
+      <div class="swiper-button-next" aria-label="Next testimonial"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section" id="faq" aria-label="Frequently asked questions">
+  <div class="container-sm">
+    <div class="text-center" data-aos="fade-up">
+      <span class="section-label"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> FAQ</span>
+      <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
+      <div class="gradient-divider center"></div>
+    </div>
+    <div class="faq-list" data-aos="fade-up" data-aos-delay="100">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do I need any prior IT experience to join?
+          <div class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i></div>
+        </button>
+        <div class="faq-answer"><p>No prior IT experience is required. Our courses are designed for complete beginners. We start from the very basics and gradually progress to advanced topics, ensuring every student can follow along regardless of their background.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What is the duration of the Cybersecurity course?
+          <div class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i></div>
+        </button>
+        <div class="faq-answer"><p>The Cybersecurity program is a comprehensive 6-month course. Classes run Monday to Friday, 10 AM to 7 PM. We also offer weekend batches for working professionals upon request.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Will I get job placement assistance after completing the course?
+          <div class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i></div>
+        </button>
+        <div class="faq-answer"><p>Yes. We provide dedicated placement support including resume building, mock interviews, LinkedIn profile optimization, and direct referrals to our hiring partner network. Our placement team supports you actively until you land a job.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Is this course available online or only offline?
+          <div class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i></div>
+        </button>
+        <div class="faq-answer"><p>Currently, training is conducted at our Whitefield, Bangalore centre. We are working on a hybrid learning option for students outside Bangalore. Contact us to discuss your learning preferences.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What certificate will I receive after completing the course?
+          <div class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i></div>
+        </button>
+        <div class="faq-answer"><p>Upon successful completion, you will receive a LearnMore Academy certification. We also help students prepare for industry-recognized certifications such as CEH, CompTIA Security+, and OSCP alongside the course.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How are classes structured? What is the batch size?
+          <div class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i></div>
+        </button>
+        <div class="faq-answer"><p>We maintain small batch sizes (maximum 15-20 students) to ensure personalized attention. Classes include theoretical sessions, hands-on lab practice, doubt-clearing sessions, and weekly assessments to track your progress.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT CTA SECTION ===== -->
+<section class="section" style="background:var(--light-2);" id="contact-cta" aria-label="Contact section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;" class="contact-grid-home">
+      <div data-aos="fade-right">
+        <span class="section-label"><i class="fa-solid fa-phone" aria-hidden="true"></i> Get In Touch</span>
+        <h2 class="section-title">Ready to Start Your <span class="highlight">IT Career?</span></h2>
+        <div class="gradient-divider"></div>
+        <p class="section-subtitle" style="margin-bottom:28px;">Talk to our counsellors for free. We'll help you choose the right course, answer your questions, and guide you every step of the way.</p>
+        <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:32px;">
+          <a href="tel:+919063326889" style="display:flex;align-items:center;gap:12px;font-size:0.95rem;font-weight:600;color:var(--dark);transition:var(--transition);" aria-label="Call us at +91 9063326889">
+            <div style="width:44px;height:44px;border-radius:var(--radius-sm);background:rgba(22,163,74,0.1);color:var(--secondary);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+            +91 9063326889
+          </a>
+          <a href="mailto:learnmoreacademyit@gmail.com" style="display:flex;align-items:center;gap:12px;font-size:0.95rem;font-weight:600;color:var(--dark);transition:var(--transition);" aria-label="Email us at learnmoreacademyit@gmail.com">
+            <div style="width:44px;height:44px;border-radius:var(--radius-sm);background:rgba(22,163,74,0.1);color:var(--secondary);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+            learnmoreacademyit@gmail.com
+          </a>
+          <div style="display:flex;align-items:center;gap:12px;font-size:0.95rem;color:var(--text-secondary);">
+            <div style="width:44px;height:44px;border-radius:var(--radius-sm);background:rgba(22,163,74,0.1);color:var(--secondary);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+            Whitefield, Bangalore, Karnataka
+          </div>
+        </div>
+        <a href="contact.html" class="btn btn-primary">
+          <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contact Us
+        </a>
+      </div>
+      <!-- Quick Contact Form -->
+      <div data-aos="fade-left" data-aos-delay="100">
+        <div class="contact-form-card">
+          <h3 style="font-family:var(--font-heading);font-weight:700;font-size:1.25rem;color:var(--dark);margin-bottom:6px;">Free Career Counselling</h3>
+          <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:24px;">Fill in your details and we'll call you back within 2 hours.</p>
+          <form id="contact-form" novalidate aria-label="Free career counselling contact form">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Full Name <span style="color:red;" aria-hidden="true">*</span></label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" aria-required="true"/>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone <span style="color:red;" aria-hidden="true">*</span></label>
+                <input class="form-input" type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required autocomplete="tel" aria-required="true"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email"/>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="course">Course Interest</label>
+              <select class="form-select" id="course" name="course" aria-label="Select course interest">
+                <option value="">Select a course...</option>
+                <option value="cybersecurity">Cybersecurity (Available Now)</option>
+                <option value="data-science">Data Science (Coming Soon)</option>
+                <option value="ai">Artificial Intelligence (Coming Soon)</option>
+                <option value="devops">DevOps (Coming Soon)</option>
+                <option value="sap">SAP (Coming Soon)</option>
+                <option value="digital-marketing">Digital Marketing (Coming Soon)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your goals or ask any question..." style="min-height:90px;" aria-label="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media(max-width:768px){
+    .contact-grid-home{grid-template-columns:1fr !important;gap:32px !important;}
+  }
+</style>
+
+<!-- ===== GOOGLE MAP ===== -->
+<section aria-label="Our location map">
+  <div class="container" style="padding-bottom:0;">
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31108.15535649286!2d77.7363!3d12.9698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1163b87bb9f7%3A0xfe5b8f4f21caf5bc!2sWhitefield%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="LearnMore Academy Location - Whitefield, Bangalore">
+      </iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="assets/images/logo.svg" alt="LearnMore Academy" width="40" height="40"/>
+          <span style="font-family:var(--font-heading);font-weight:800;font-size:1.1rem;color:white;">LearnMore <span style="color:var(--secondary);">Academy</span></span>
+        </div>
+        <div class="footer-badge"><i class="fa-solid fa-map-marker-alt" aria-hidden="true"></i> Whitefield, Bangalore</div>
+        <p class="footer-tagline">Job-oriented IT training for students, graduates, and professionals who want to start or switch to a high-paying IT career.</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="#" class="footer-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+          <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" class="footer-social-link" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+          <a href="https://wa.me/919063326889" class="footer-social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <!-- Courses -->
+      <div>
+        <h3 class="footer-col-title">Courses</h3>
+        <nav class="footer-links" aria-label="Course links">
+          <a href="cybersecurity.html" class="footer-link"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Cybersecurity</a>
+          <a href="courses.html" class="footer-link"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Data Science</a>
+          <a href="courses.html" class="footer-link"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Artificial Intelligence</a>
+          <a href="courses.html" class="footer-link"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> DevOps</a>
+          <a href="courses.html" class="footer-link"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> SAP Training</a>
+          <a href="courses.html" class="footer-link"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Digital Marketing</a>
+        </nav>
+      </div>
+      <!-- Quick Links -->
+      <div>
+        <h3 class="footer-col-title">Quick Links</h3>
+        <nav class="footer-links" aria-label="Quick links">
+          <a href="index.html" class="footer-link"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Home</a>
+          <a href="about.html" class="footer-link"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> About Us</a>
+          <a href="courses.html" class="footer-link"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> All Courses</a>
+          <a href="contact.html" class="footer-link"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Contact</a>
+          <a href="privacy.html" class="footer-link"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Privacy Policy</a>
+          <a href="terms.html" class="footer-link"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Terms &amp; Conditions</a>
+        </nav>
+      </div>
+      <!-- Contact -->
+      <div>
+        <h3 class="footer-col-title">Contact Us</h3>
+        <div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <a href="tel:+919063326889" style="color:rgba(255,255,255,0.5);transition:var(--transition);" aria-label="Call us">+91 9063326889</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:learnmoreacademyit@gmail.com" style="color:rgba(255,255,255,0.5);transition:var(--transition);word-break:break-all;" aria-label="Email us">learnmoreacademyit@gmail.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Whitefield, Bangalore, Karnataka</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-regular fa-clock" aria-hidden="true"></i>
+            <span>Mon–Fri: 10 AM – 7 PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-bottom-text">© 2025 LearnMore Academy. All rights reserved. Made with <span style="color:var(--secondary);">♥</span> in Bangalore.</p>
+      <div class="footer-bottom-links">
+        <a href="privacy.html" class="footer-bottom-link">Privacy Policy</a>
+        <a href="terms.html" class="footer-bottom-link">Terms &amp; Conditions</a>
+        <a href="sitemap.xml" class="footer-bottom-link">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="back-to-top" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
