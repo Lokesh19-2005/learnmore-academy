@@ -234,14 +234,56 @@ document.addEventListener('DOMContentLoaded', () => {
    WHATSAPP FLOAT BUTTON — inject dynamically
    ============================================ */
 document.addEventListener('DOMContentLoaded', () => {
+  // Pre-typed WhatsApp message
+  const waMsg = encodeURIComponent(
+    "Hi LearnMore Academy! 👋\nI'm interested in the Cybersecurity course.\nPlease share more details about the program, batch dates, and fees."
+  );
+  const waURL = `https://wa.me/919063326889?text=${waMsg}`;
+
   const wa = document.createElement('a');
-  wa.href = 'https://wa.me/919063326889';
+  wa.href = waURL;
   wa.className = 'whatsapp-float';
   wa.setAttribute('aria-label', 'Chat with us on WhatsApp');
   wa.setAttribute('target', '_blank');
   wa.setAttribute('rel', 'noopener noreferrer');
+  wa.setAttribute('title', 'Chat on WhatsApp');
   wa.innerHTML = '<i class="fa-brands fa-whatsapp" aria-hidden="true"></i>';
   document.body.appendChild(wa);
+
+  // Show a small tooltip after 3 seconds to attract attention
+  setTimeout(() => {
+    const tip = document.createElement('div');
+    tip.id = 'wa-tooltip';
+    tip.setAttribute('aria-live', 'polite');
+    tip.innerHTML = '💬 Chat with us!';
+    tip.style.cssText = `
+      position:fixed; bottom:138px; right:28px; z-index:501;
+      background:#25D366; color:white;
+      font-family:'Inter',sans-serif; font-size:0.78rem; font-weight:700;
+      padding:7px 14px; border-radius:99px;
+      box-shadow:0 4px 16px rgba(37,211,102,0.4);
+      white-space:nowrap; cursor:pointer;
+      animation:waTipIn 0.4s cubic-bezier(0.4,0,0.2,1) forwards;
+      transform:translateX(20px); opacity:0;
+    `;
+    // Inline keyframe via stylesheet
+    const st = document.createElement('style');
+    st.textContent = `
+      @keyframes waTipIn { to { transform:translateX(0); opacity:1; } }
+      @keyframes waTipOut { to { transform:translateX(20px); opacity:0; } }
+    `;
+    document.head.appendChild(st);
+    document.body.appendChild(tip);
+
+    // Click tooltip → open WhatsApp
+    tip.addEventListener('click', () => window.open(waURL, '_blank'));
+
+    // Auto-dismiss after 5 seconds
+    setTimeout(() => {
+      tip.style.animation = 'waTipOut 0.3s ease forwards';
+      setTimeout(() => tip.remove(), 350);
+    }, 5000);
+  }, 3000);
 
   /* ============================================
      LAZY LOAD IMAGES
